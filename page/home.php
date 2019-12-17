@@ -3,11 +3,23 @@
    <div class="col-md-4 p-3 bg-light rounded">
       <form action="" method="get">
          <div class="form-row">
-            <div class="form-group col-md-8">      
-               <input type="text" name="jumlah" class="form-control" placeholder="Jumlah Nama" id="inputJumlah">
+            <div class="form-group col-md-12">      
+               <input type="text" name="age" class="form-control" placeholder="Usia" id="inputUsia">
             </div>
-            <div class="form-group col-md-4">
-               <input type="submit" name="submit" value="Mulai" class="form-control btn btn-primary" id="mulai">
+         </div>
+         <div class="form-row">
+            <div class="form-group col-md-12">      
+               <input type="text" name="income" class="form-control" placeholder="Pendapatan" id="inputJumlah">
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="form-group col-md-12">      
+               <input type="text" name="student" class="form-control" placeholder="Status Pelajar" id="inputJumlah">
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="form-group col-md-12">      
+               <input type="text" name="credit" class="form-control" placeholder="Credit Rating" id="inputJumlah">
             </div>
          </div>
       </form>
@@ -17,3 +29,8 @@
    </div>
    <div class="col-md-4"></div>
 </div>
+
+
+<div class="form-group">
+               <input type="submit" name="submit" value="Mulai" class="form-control btn btn-primary" id="mulai">
+            </div>

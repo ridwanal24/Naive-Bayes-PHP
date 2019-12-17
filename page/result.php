@@ -1,3 +1,8 @@
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6 bg-light rounded p-3">
+
 <?php
 $age = array("1","1","2","3","3","3","2","1","1","3","1","2","2","3");
 $income = array("3","3","3","2","1","1","1","2","1","2","2","2","3","2");
@@ -174,10 +179,14 @@ while ($index<$n){
 
 /*==========================================================*/
 
-
 echo "P(yes) = ".$hasil_yes."<br>";
 echo "P(no) = ".$hasil_no."<br>";
 
-
-
 ?>
+
+</div>
+<div class="col-md-3"></div>
+</div>
+
+
+</div>
