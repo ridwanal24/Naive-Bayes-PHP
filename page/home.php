@@ -3,8 +3,8 @@
    <div class="col-md-4 p-3 bg-light rounded">
       <form action="" method="get">
          <div class="form-row">
-            <div class="form-group col-md-12">      
-               <input type="text" name="age" class="form-control" placeholder="Usia" id="inputUsia">
+            <div class="form-group col-md-12">    
+               <input type="number" name="age" class="form-control" placeholder="Usia" id="inputUsia">
             </div>
          </div>
          <div class="form-row">
