@@ -8,11 +8,10 @@
       <div class="container-fluid">
          <p class="h1 text-center text-light">GENERATOR NAMA INDONESIA</p>
       	<?php
-
       	if (isset($_GET['submit'])) {
-      		$page="result";
+      		$page="result_drug";
       	}else{
-      		$page="home";
+      		$page="result_drug";
       	}
       		include 'page/'.$page.'.php';	
       	?>

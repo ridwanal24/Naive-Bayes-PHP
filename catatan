@@ -1,0 +1,72 @@
+1. Age
+-0.95197	18-24 tahun
+-0.07854	25-34 tahun
+0.49788		35-44 tahun
+1.09449 	45-54 tahun
+1.82213 	55-64 tahun
+2.59171 	65+   tahun
+
+2. Gender
+0.48246		Perempuan
+-0.48246	Laki-laki
+
+3. Edukasi
+-2.43591	Left school before 16 years
+-1.73790 	Left school at 16 years
+-1.43719 	Left school at 17 years
+-1.22751 	Left school at 18 years
+-0.61113 	Some college or university, no certificate or degree
+-0.05921 	Professional certificate/ diploma
+0.45468 	University degree
+1.16365 	Masters degree
+1.98437 	Doctorate degree
+
+4. Nikotin (Rokok)
+
+5. Caffeine (Kopi)
+
+6. Cokelat
+
+7. Alkohol
+
+===============================
+
+
+8. Amphetamines
+
+9. Amyl Nitrite
+
+10. Benzodiazepine
+
+11. Cannabis
+
+12. Kokain
+
+13. Crack
+
+14. Ektasi
+
+15. Heroine
+
+16. Ketamine
+
+17. Legal Highs
+
+18. LSD
+
+19. Methadone
+
+20. Magic Mushrooms
+
+21. Semeron
+
+22. VSA
+
+CL0 	Never Used
+CL1 	Used over a Decade Ago
+CL2 	Used in Last Decade
+CL3 	Used in Last Year
+CL4 	Used in Last Month
+CL5 	Used in Last Week
+CL6 	Used in Last Day
+

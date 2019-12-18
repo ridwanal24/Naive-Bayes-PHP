@@ -29,8 +29,6 @@
    </div>
    <div class="col-md-4"></div>
 </div>
-
-
 <div class="form-group">
                <input type="submit" name="submit" value="Mulai" class="form-control btn btn-primary" id="mulai">
             </div>
