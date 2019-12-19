@@ -11,7 +11,7 @@ $credit_rating= array("1","2","1","1","1","2","2","1","1","1","2","2","1","2");
 $buys_computer= array("no","no","yes","yes","yes","no","yes","no","yes","yes","yes","yes","yes","no");
 
 $p_yes = array();
-$p_no=array();
+$p_no = array();
 
 //Menghitung P YES//
 $index=0;
@@ -22,6 +22,7 @@ while($index<$n){
 	if($buys_computer[$index]=="yes"){
 		$count++;
 	}
+	
 	$index++;
 }
 $count_yes=$count;
