@@ -171,19 +171,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $nicotine[$index]=="nikotine_1"){
+	if($kelas[$index]=="class_0" AND $nicotine[$index]=="nikotin_1"){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $nicotine[$index]=="nikotine_1") {
+	}else if ($kelas[$index]=="class_1" AND $nicotine[$index]=="nikotin_1") {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $nicotine[$index]=="nikotine_1") {
+	}else if ($kelas[$index]=="class_2" AND $nicotine[$index]=="nikotin_1") {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $nicotine[$index]=="nikotine_1") {
+	}else if ($kelas[$index]=="class_3" AND $nicotine[$index]=="nikotin_1") {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $nicotine[$index]=="nikotine_1") {
+	}else if ($kelas[$index]=="class_4" AND $nicotine[$index]=="nikotin_1") {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $nicotine[$index]=="nikotine_1") {
+	}else if ($kelas[$index]=="class_5" AND $nicotine[$index]=="nikotin_1") {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $nicotine[$index]=="nikotine_1") {
+	}else if ($kelas[$index]=="class_6" AND $nicotine[$index]=="nikotin_1") {
 		$count6++;
 	}
 	$index++;
@@ -233,31 +233,68 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $caffeine[$index]=="caffeine_5"){
+	if($kelas[$index]=="class_0" AND $chocolate[$index]=="choco_3"){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_1" AND $chocolate[$index]=="choco_3") {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_2" AND $chocolate[$index]=="choco_3") {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_3" AND $chocolate[$index]=="choco_3") {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_4" AND $chocolate[$index]=="choco_3") {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_5" AND $chocolate[$index]=="choco_3") {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_6" AND $chocolate[$index]=="choco_3") {
 		$count6++;
 	}
 	$index++;
 }
-$hasil_class_0[5]=$count0/$count_class_0;
-$hasil_class_1[5]=$count1/$count_class_1;
-$hasil_class_2[5]=$count2/$count_class_2;
-$hasil_class_3[5]=$count3/$count_class_3;
-$hasil_class_4[5]=$count4/$count_class_4;
-$hasil_class_5[5]=$count5/$count_class_5;
-$hasil_class_6[5]=$count6/$count_class_6;
+$hasil_class_0[6]=$count0/$count_class_0;
+$hasil_class_1[6]=$count1/$count_class_1;
+$hasil_class_2[6]=$count2/$count_class_2;
+$hasil_class_3[6]=$count3/$count_class_3;
+$hasil_class_4[6]=$count4/$count_class_4;
+$hasil_class_5[6]=$count5/$count_class_5;
+$hasil_class_6[6]=$count6/$count_class_6;
 	//Akhir Menghitung P terhadap C (Cokelat) //
 
+	//Menghitung P terhadap C (Alkohol) //
+$index=0;
+$count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
+while($index<$n){
+	if($kelas[$index]=="class_0" AND $alchohol[$index]=="alchohol_3"){
+		$count0++;
+	}else if ($kelas[$index]=="class_1" AND $alchohol[$index]=="alchohol_3") {
+		$count1++;
+	}else if ($kelas[$index]=="class_2" AND $alchohol[$index]=="alchohol_3") {
+		$count2++;
+	}else if ($kelas[$index]=="class_3" AND $alchohol[$index]=="alchohol_3") {
+		$count3++;
+	}else if ($kelas[$index]=="class_4" AND $alchohol[$index]=="alchohol_3") {
+		$count4++;
+	}else if ($kelas[$index]=="class_5" AND $alchohol[$index]=="alchohol_3") {
+		$count5++;
+	}else if ($kelas[$index]=="class_6" AND $alchohol[$index]=="alchohol_3") {
+		$count6++;
+	}
+	$index++;
+}
+$hasil_class_0[7]=$count0/$count_class_0;
+$hasil_class_1[7]=$count1/$count_class_1;
+$hasil_class_2[7]=$count2/$count_class_2;
+$hasil_class_3[7]=$count3/$count_class_3;
+$hasil_class_4[7]=$count4/$count_class_4;
+$hasil_class_5[7]=$count5/$count_class_5;
+$hasil_class_6[7]=$count6/$count_class_6;
+	//Akhir Menghitung P terhadap C (Alkohol) //
+
+print_r($hasil_class_0);echo "<br>";
+print_r($hasil_class_1);echo "<br>";
+print_r($hasil_class_2);echo "<br>";
+print_r($hasil_class_3);echo "<br>";
+print_r($hasil_class_4);echo "<br>";
+print_r($hasil_class_5);echo "<br>";
+print_r($hasil_class_6);echo "<br>";
 ?>
