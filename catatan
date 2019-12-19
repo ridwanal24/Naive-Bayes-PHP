@@ -1,5 +1,5 @@
 1. Age
--0.95197	18-24 tahun
+-0.95197	<24	  tahun
 -0.07854	25-34 tahun
 0.49788		35-44 tahun
 1.09449 	45-54 tahun
@@ -61,6 +61,8 @@
 21. Semeron
 
 22. VSA
+
+**Catatan : 8 Sampai 22 digabung jadi 1 kolom Kerawanan
 
 CL0 	Never Used
 CL1 	Used over a Decade Ago
