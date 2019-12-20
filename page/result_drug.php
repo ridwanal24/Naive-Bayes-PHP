@@ -73,14 +73,6 @@ $hasil_class_4[0]=$count_class_4/$n;
 $hasil_class_5[0]=$count_class_5/$n;
 $hasil_class_6[0]=$count_class_6/$n;
 
-$hasil_class_0[0]=round($hasil_class_0[0],$koma);
-$hasil_class_1[0]=round($hasil_class_1[0],$koma);
-$hasil_class_2[0]=round($hasil_class_2[0],$koma);
-$hasil_class_3[0]=round($hasil_class_3[0],$koma);
-$hasil_class_4[0]=round($hasil_class_4[0],$koma);
-$hasil_class_5[0]=round($hasil_class_5[0],$koma);
-$hasil_class_6[0]=round($hasil_class_6[0],$koma);
-
 	//Akhir Menghitung P Class_1//
 
 	//Menghitung P terhadap C (Age) //
@@ -112,14 +104,6 @@ $hasil_class_3[1]=$count3/$count_class_3;
 $hasil_class_4[1]=$count4/$count_class_4;
 $hasil_class_5[1]=$count5/$count_class_5;
 $hasil_class_6[1]=$count6/$count_class_6;
-
-$hasil_class_0[1]=round($hasil_class_0[1],$koma);
-$hasil_class_1[1]=round($hasil_class_1[1],$koma);
-$hasil_class_2[1]=round($hasil_class_2[1],$koma);
-$hasil_class_3[1]=round($hasil_class_3[1],$koma);
-$hasil_class_4[1]=round($hasil_class_4[1],$koma);
-$hasil_class_5[1]=round($hasil_class_5[1],$koma);
-$hasil_class_6[1]=round($hasil_class_6[1],$koma);
 
 	//Akhir Menghitung P terhadap C (Age) //
 
@@ -153,14 +137,6 @@ $hasil_class_4[2]=$count4/$count_class_4;
 $hasil_class_5[2]=$count5/$count_class_5;
 $hasil_class_6[2]=$count6/$count_class_6;
 
-$hasil_class_0[2]=round($hasil_class_0[2],$koma);
-$hasil_class_1[2]=round($hasil_class_1[2],$koma);
-$hasil_class_2[2]=round($hasil_class_2[2],$koma);
-$hasil_class_3[2]=round($hasil_class_3[2],$koma);
-$hasil_class_4[2]=round($hasil_class_4[2],$koma);
-$hasil_class_5[2]=round($hasil_class_5[2],$koma);
-$hasil_class_6[2]=round($hasil_class_6[2],$koma);
-
 	//Akhir Menghitung P terhadap C (Gender) //
 
 	//Menghitung P terhadap C (Education) //
@@ -192,14 +168,6 @@ $hasil_class_3[3]=$count3/$count_class_3;
 $hasil_class_4[3]=$count4/$count_class_4;
 $hasil_class_5[3]=$count5/$count_class_5;
 $hasil_class_6[3]=$count6/$count_class_6;
-
-$hasil_class_0[3]=round($hasil_class_0[3],$koma);
-$hasil_class_1[3]=round($hasil_class_1[3],$koma);
-$hasil_class_2[3]=round($hasil_class_2[3],$koma);
-$hasil_class_3[3]=round($hasil_class_3[3],$koma);
-$hasil_class_4[3]=round($hasil_class_4[3],$koma);
-$hasil_class_5[3]=round($hasil_class_5[3],$koma);
-$hasil_class_6[3]=round($hasil_class_6[3],$koma);
 
 	//Akhir Menghitung P terhadap C (Education) //
 
@@ -233,14 +201,6 @@ $hasil_class_4[4]=$count4/$count_class_4;
 $hasil_class_5[4]=$count5/$count_class_5;
 $hasil_class_6[4]=$count6/$count_class_6;
 
-$hasil_class_0[4]=round($hasil_class_0[4],$koma);
-$hasil_class_1[4]=round($hasil_class_1[4],$koma);
-$hasil_class_2[4]=round($hasil_class_2[4],$koma);
-$hasil_class_3[4]=round($hasil_class_3[4],$koma);
-$hasil_class_4[4]=round($hasil_class_4[4],$koma);
-$hasil_class_5[4]=round($hasil_class_5[4],$koma);
-$hasil_class_6[4]=round($hasil_class_6[4],$koma);
-
 	//Akhir Menghitung P terhadap C (Nikotin) //
 
 	//Menghitung P terhadap C (Caffein) //
@@ -272,14 +232,6 @@ $hasil_class_3[5]=$count3/$count_class_3;
 $hasil_class_4[5]=$count4/$count_class_4;
 $hasil_class_5[5]=$count5/$count_class_5;
 $hasil_class_6[5]=$count6/$count_class_6;
-
-$hasil_class_0[5]=round($hasil_class_0[5],$koma);
-$hasil_class_1[5]=round($hasil_class_1[5],$koma);
-$hasil_class_2[5]=round($hasil_class_2[5],$koma);
-$hasil_class_3[5]=round($hasil_class_3[5],$koma);
-$hasil_class_4[5]=round($hasil_class_4[5],$koma);
-$hasil_class_5[5]=round($hasil_class_5[5],$koma);
-$hasil_class_6[5]=round($hasil_class_6[5],$koma);
 
 	//Akhir Menghitung P terhadap C (Caffein) //
 
@@ -313,14 +265,6 @@ $hasil_class_4[6]=$count4/$count_class_4;
 $hasil_class_5[6]=$count5/$count_class_5;
 $hasil_class_6[6]=$count6/$count_class_6;
 
-$hasil_class_0[6]=round($hasil_class_0[6],$koma);
-$hasil_class_1[6]=round($hasil_class_1[6],$koma);
-$hasil_class_2[6]=round($hasil_class_2[6],$koma);
-$hasil_class_3[6]=round($hasil_class_3[6],$koma);
-$hasil_class_4[6]=round($hasil_class_4[6],$koma);
-$hasil_class_5[6]=round($hasil_class_5[6],$koma);
-$hasil_class_6[6]=round($hasil_class_6[6],$koma);
-
 	//Akhir Menghitung P terhadap C (Cokelat) //
 
 	//Menghitung P terhadap C (Alkohol) //
@@ -353,14 +297,6 @@ $hasil_class_4[7]=$count4/$count_class_4;
 $hasil_class_5[7]=$count5/$count_class_5;
 $hasil_class_6[7]=$count6/$count_class_6;
 
-$hasil_class_0[7]=round($hasil_class_0[7],$koma);
-$hasil_class_1[7]=round($hasil_class_1[7],$koma);
-$hasil_class_2[7]=round($hasil_class_2[7],$koma);
-$hasil_class_3[7]=round($hasil_class_3[7],$koma);
-$hasil_class_4[7]=round($hasil_class_4[7],$koma);
-$hasil_class_5[7]=round($hasil_class_5[7],$koma);
-$hasil_class_6[7]=round($hasil_class_6[7],$koma);
-
 	//Akhir Menghitung P terhadap C (Alkohol) //
 
 	//Hitung Masing-masing Score per CLass //
@@ -375,27 +311,50 @@ $hasil_class_6[7]=round($hasil_class_6[7],$koma);
 		$class[4]*=$hasil_class_4[$a];
 		$class[5]*=$hasil_class_5[$a];
 		$class[6]*=$hasil_class_6[$a];
-	    
-	    $class[0]=round($class[0],$koma);
-	    $class[1]=round($class[1],$koma);
-	    $class[2]=round($class[2],$koma);
-	    $class[3]=round($class[3],$koma);
-	    $class[4]=round($class[4],$koma);
-	    $class[5]=round($class[5],$koma);
-	    $class[6]=round($class[6],$koma);
 
-	    $a++;/*
-	    echo $class[0]."<br>";
-	    echo $class[1]."<br>";
-	    echo $class[2]."<br>";
-	    echo $class[3]."<br>";
-	    echo $class[4]."<br>";*/
+	    $a++;
 	}
-	    
-	    print_r($class);
+	$kesimpulan[0]=$class[0];
+	$kesimpulan[1]=$class[1];
+	$kesimpulan[2]=$class[2];
+	$kesimpulan[3]=$class[3];
+	$kesimpulan[4]=$class[4];
+	$kesimpulan[5]=$class[5];
+	$kesimpulan[6]=$class[6];
 
-	    if ($class[0]>$class[1]) {
-	    	echo 'a';
-	    }
+	print_r($kesimpulan);
+
+	rsort($class);
+
+	switch ($class[0]) {
+		case $kesimpulan[0]:
+			echo "kelas 0";
+			break;
+
+			case $kesimpulan[1]:
+			echo "kelas 1";
+			break;
+
+			case $kesimpulan[2]:
+			echo "kelas 2";
+			break;
+
+			case $kesimpulan[3]:
+			echo "kelas 3";
+			break;
+
+			case $kesimpulan[4]:
+			echo "kelas 4";
+			break;
+
+			case $kesimpulan[5]:
+			echo "kelas 5";
+			break;
+
+			case $kesimpulan[6]:
+			echo "kelas 6";
+			break;
+	}
+
 	//Akhir Hitung Masing-masing Score per CLass //
 ?>
