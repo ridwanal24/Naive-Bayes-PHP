@@ -11,6 +11,28 @@ $chocolate = array();
 $alchohol = array();
 $kelas = array();
 
+	//Klasifikasi Kelas Usia
+	$umur=0;
+	if ($_GET['age']<24) {
+		$umur="age_1";
+	}else if ($_GET['age']>=25 AND $_GET['age']<=34) {
+		$umur="age_2";
+	}else if ($_GET['age']>=35 AND $_GET['age']<=44) {
+		$umur="age_3";
+	}else if ($_GET['age']>=45 AND $_GET['age']<=54) {
+		$umur="age_4";
+	}else if ($_GET['age']>=55 AND $_GET['age']<=64) {
+		$umur="age_5";
+	}else{
+		$umur="age_6";
+	} 
+
+/*-0.95197	<24	  tahun
+-0.07854	25-34 tahun
+0.49788		35-44 tahun
+1.09449 	45-54 tahun
+1.82213 	55-64 tahun
+2.59171 	65+   tahun*/
 	//deklarasi variabel hasil
 $hasil_class_0 = array();
 $hasil_class_1 = array();
@@ -80,19 +102,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $age[$index]=="age_1"){
+	if($kelas[$index]=="class_0" AND $age[$index]==$umur){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $age[$index]=="age_1") {
+	}else if ($kelas[$index]=="class_1" AND $age[$index]==$umur) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $age[$index]=="age_1") {
+	}else if ($kelas[$index]=="class_2" AND $age[$index]==$umur) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $age[$index]=="age_1") {
+	}else if ($kelas[$index]=="class_3" AND $age[$index]==$umur) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $age[$index]=="age_1") {
+	}else if ($kelas[$index]=="class_4" AND $age[$index]==$umur) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $age[$index]=="age_1") {
+	}else if ($kelas[$index]=="class_5" AND $age[$index]==$umur) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $age[$index]=="age_1") {
+	}else if ($kelas[$index]=="class_6" AND $age[$index]==$umur) {
 		$count6++;
 	}
 	$index++;
@@ -112,19 +134,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $gender[$index]=="gender_male"){
+	if($kelas[$index]=="class_0" AND $gender[$index]==$_GET['gender']){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $gender[$index]=="gender_male") {
+	}else if ($kelas[$index]=="class_1" AND $gender[$index]==$_GET['gender']) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $gender[$index]=="gender_male") {
+	}else if ($kelas[$index]=="class_2" AND $gender[$index]==$_GET['gender']) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $gender[$index]=="gender_male") {
+	}else if ($kelas[$index]=="class_3" AND $gender[$index]==$_GET['gender']) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $gender[$index]=="gender_male") {
+	}else if ($kelas[$index]=="class_4" AND $gender[$index]==$_GET['gender']) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $gender[$index]=="gender_male") {
+	}else if ($kelas[$index]=="class_5" AND $gender[$index]==$_GET['gender']) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $gender[$index]=="gender_male") {
+	}else if ($kelas[$index]=="class_6" AND $gender[$index]==$_GET['gender']) {
 		$count6++;
 	}
 	$index++;
@@ -144,19 +166,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $education[$index]=="edu_5"){
+	if($kelas[$index]=="class_0" AND $education[$index]==$_GET['education']){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $education[$index]=="edu_5") {
+	}else if ($kelas[$index]=="class_1" AND $education[$index]==$_GET['education']) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $education[$index]=="edu_5") {
+	}else if ($kelas[$index]=="class_2" AND $education[$index]==$_GET['education']) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $education[$index]=="edu_5") {
+	}else if ($kelas[$index]=="class_3" AND $education[$index]==$_GET['education']) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $education[$index]=="edu_5") {
+	}else if ($kelas[$index]=="class_4" AND $education[$index]==$_GET['education']) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $education[$index]=="edu_5") {
+	}else if ($kelas[$index]=="class_5" AND $education[$index]==$_GET['education']) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $education[$index]=="edu_5") {
+	}else if ($kelas[$index]=="class_6" AND $education[$index]==$_GET['education']) {
 		$count6++;
 	}
 	$index++;
@@ -176,19 +198,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $nicotine[$index]=="nikotin_1"){
+	if($kelas[$index]=="class_0" AND $nicotine[$index]==$_GET['nicotine']){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $nicotine[$index]=="nikotin_1") {
+	}else if ($kelas[$index]=="class_1" AND $nicotine[$index]==$_GET['nicotine']) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $nicotine[$index]=="nikotin_1") {
+	}else if ($kelas[$index]=="class_2" AND $nicotine[$index]==$_GET['nicotine']) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $nicotine[$index]=="nikotin_1") {
+	}else if ($kelas[$index]=="class_3" AND $nicotine[$index]==$_GET['nicotine']) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $nicotine[$index]=="nikotin_1") {
+	}else if ($kelas[$index]=="class_4" AND $nicotine[$index]==$_GET['nicotine']) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $nicotine[$index]=="nikotin_1") {
+	}else if ($kelas[$index]=="class_5" AND $nicotine[$index]==$_GET['nicotine']) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $nicotine[$index]=="nikotin_1") {
+	}else if ($kelas[$index]=="class_6" AND $nicotine[$index]==$_GET['nicotine']) {
 		$count6++;
 	}
 	$index++;
@@ -208,19 +230,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $caffeine[$index]=="caffeine_5"){
+	if($kelas[$index]=="class_0" AND $caffeine[$index]==$_GET['caffeine']){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_1" AND $caffeine[$index]==$_GET['caffeine']) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_2" AND $caffeine[$index]==$_GET['caffeine']) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_3" AND $caffeine[$index]==$_GET['caffeine']) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_4" AND $caffeine[$index]==$_GET['caffeine']) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_5" AND $caffeine[$index]==$_GET['caffeine']) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $caffeine[$index]=="caffeine_5") {
+	}else if ($kelas[$index]=="class_6" AND $caffeine[$index]==$_GET['caffeine']) {
 		$count6++;
 	}
 	$index++;
@@ -240,19 +262,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $chocolate[$index]=="choco_3"){
+	if($kelas[$index]=="class_0" AND $chocolate[$index]==$_GET['chocolate']){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $chocolate[$index]=="choco_3") {
+	}else if ($kelas[$index]=="class_1" AND $chocolate[$index]==$_GET['chocolate']) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $chocolate[$index]=="choco_3") {
+	}else if ($kelas[$index]=="class_2" AND $chocolate[$index]==$_GET['chocolate']) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $chocolate[$index]=="choco_3") {
+	}else if ($kelas[$index]=="class_3" AND $chocolate[$index]==$_GET['chocolate']) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $chocolate[$index]=="choco_3") {
+	}else if ($kelas[$index]=="class_4" AND $chocolate[$index]==$_GET['chocolate']) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $chocolate[$index]=="choco_3") {
+	}else if ($kelas[$index]=="class_5" AND $chocolate[$index]==$_GET['chocolate']) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $chocolate[$index]=="choco_3") {
+	}else if ($kelas[$index]=="class_6" AND $chocolate[$index]==$_GET['chocolate']) {
 		$count6++;
 	}
 	$index++;
@@ -272,19 +294,19 @@ $index=0;
 $count0=$count1=$count2=$count3=$count4=$count5=$count6=0;
 
 while($index<$n){
-	if($kelas[$index]=="class_0" AND $alchohol[$index]=="alchohol_3"){
+	if($kelas[$index]=="class_0" AND $alchohol[$index]==$_GET['alchohol']){
 		$count0++;
-	}else if ($kelas[$index]=="class_1" AND $alchohol[$index]=="alchohol_3") {
+	}else if ($kelas[$index]=="class_1" AND $alchohol[$index]==$_GET['alchohol']) {
 		$count1++;
-	}else if ($kelas[$index]=="class_2" AND $alchohol[$index]=="alchohol_3") {
+	}else if ($kelas[$index]=="class_2" AND $alchohol[$index]==$_GET['alchohol']) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $alchohol[$index]=="alchohol_3") {
+	}else if ($kelas[$index]=="class_3" AND $alchohol[$index]==$_GET['alchohol']) {
 		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $alchohol[$index]=="alchohol_3") {
+	}else if ($kelas[$index]=="class_4" AND $alchohol[$index]==$_GET['alchohol']) {
 		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $alchohol[$index]=="alchohol_3") {
+	}else if ($kelas[$index]=="class_5" AND $alchohol[$index]==$_GET['alchohol']) {
 		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $alchohol[$index]=="alchohol_3") {
+	}else if ($kelas[$index]=="class_6" AND $alchohol[$index]==$_GET['alchohol']) {
 		$count6++;
 	}
 	$index++;
