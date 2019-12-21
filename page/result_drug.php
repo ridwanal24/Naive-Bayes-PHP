@@ -12,20 +12,20 @@ $alchohol = array();
 $kelas = array();
 
 	//Klasifikasi Kelas Usia
-	$umur=0;
-	if ($_GET['age']<24) {
-		$umur="age_1";
-	}else if ($_GET['age']>=25 AND $_GET['age']<=34) {
-		$umur="age_2";
-	}else if ($_GET['age']>=35 AND $_GET['age']<=44) {
-		$umur="age_3";
-	}else if ($_GET['age']>=45 AND $_GET['age']<=54) {
-		$umur="age_4";
-	}else if ($_GET['age']>=55 AND $_GET['age']<=64) {
-		$umur="age_5";
-	}else{
-		$umur="age_6";
-	} 
+$umur=0;
+if ($_GET['age']<24) {
+	$umur="age_1";
+}else if ($_GET['age']>=25 AND $_GET['age']<=34) {
+	$umur="age_2";
+}else if ($_GET['age']>=35 AND $_GET['age']<=44) {
+	$umur="age_3";
+}else if ($_GET['age']>=45 AND $_GET['age']<=54) {
+	$umur="age_4";
+}else if ($_GET['age']>=55 AND $_GET['age']<=64) {
+	$umur="age_5";
+}else{
+	$umur="age_6";
+} 
 
 /*-0.95197	<24	  tahun
 -0.07854	25-34 tahun
@@ -322,61 +322,68 @@ $hasil_class_6[7]=$count6/$count_class_6;
 	//Akhir Menghitung P terhadap C (Alkohol) //
 
 	//Hitung Masing-masing Score per CLass //
-	$a=0;
+$a=0;
 
-	$class=array(1,1,1,1,1,1,1);
-	while ($a<7) {
-		$class[0]*=$hasil_class_0[$a];
-		$class[1]*=$hasil_class_1[$a];
-		$class[2]*=$hasil_class_2[$a];
-		$class[3]*=$hasil_class_3[$a];
-		$class[4]*=$hasil_class_4[$a];
-		$class[5]*=$hasil_class_5[$a];
-		$class[6]*=$hasil_class_6[$a];
+$class=array(1,1,1,1,1,1,1);
+while ($a<7) {
+	$class[0]*=$hasil_class_0[$a];
+	$class[1]*=$hasil_class_1[$a];
+	$class[2]*=$hasil_class_2[$a];
+	$class[3]*=$hasil_class_3[$a];
+	$class[4]*=$hasil_class_4[$a];
+	$class[5]*=$hasil_class_5[$a];
+	$class[6]*=$hasil_class_6[$a];
 
-	    $a++;
-	}
-	$kesimpulan[0]=$class[0];
-	$kesimpulan[1]=$class[1];
-	$kesimpulan[2]=$class[2];
-	$kesimpulan[3]=$class[3];
-	$kesimpulan[4]=$class[4];
-	$kesimpulan[5]=$class[5];
-	$kesimpulan[6]=$class[6];
+	$a++;
+}
+$kesimpulan[0]=$class[0];
+$kesimpulan[1]=$class[1];
+$kesimpulan[2]=$class[2];
+$kesimpulan[3]=$class[3];
+$kesimpulan[4]=$class[4];
+$kesimpulan[5]=$class[5];
+$kesimpulan[6]=$class[6];
 
-	print_r($kesimpulan);
-
-	rsort($class);
-
-	switch ($class[0]) {
-		case $kesimpulan[0]:
-			echo "kelas 0";
+/*print_r($kesimpulan);
+*/
+rsort($class);
+?>
+<div class="row">
+	<div class="col-4"></div>	
+	<div class="col-4 rounded p-md-4 text-center bg-light">
+		<p class="h2 text-center">Tingkat Kerawanan</p>
+		<?php
+		switch ($class[0]) {
+			case $kesimpulan[0]:
+			echo "0";
 			break;
 
 			case $kesimpulan[1]:
-			echo "kelas 1";
+			echo "1";
 			break;
 
 			case $kesimpulan[2]:
-			echo "kelas 2";
+			echo "2";
 			break;
 
 			case $kesimpulan[3]:
-			echo "kelas 3";
+			echo "3";
 			break;
 
 			case $kesimpulan[4]:
-			echo "kelas 4";
+			echo "4";
 			break;
 
 			case $kesimpulan[5]:
-			echo "kelas 5";
+			echo "5";
 			break;
 
 			case $kesimpulan[6]:
-			echo "kelas 6";
+			echo "6";
 			break;
-	}
-
+		}
 	//Akhir Hitung Masing-masing Score per CLass //
-?>
+		?>		
+	</div>	
+	<div class="col-4"></div>	
+</div>

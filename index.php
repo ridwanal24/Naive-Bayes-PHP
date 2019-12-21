@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Nama Random</title>
+ <title>NBC</title>
  <link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
 </head>
 <body class="bg-info">
@@ -13,9 +13,7 @@
      }else {
        $page="result_drug";
      }
-
  include 'page/'.$page.'.php';
-
  ?>
 </div>
 </body>
