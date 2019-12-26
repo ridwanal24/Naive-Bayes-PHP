@@ -351,39 +351,50 @@ rsort($class);
 <div class="row">
 	<div class="col-4"></div>	
 	<div class="col-4 rounded p-md-4 text-center bg-light">
-		<p class="h2 text-center">Tingkat Kerawanan</p>
+		<p class="h1 text-center">Tingkat Kerawanan</p>
+		<br>
+		<p class="h1">
 		<?php
 		switch ($class[0]) {
 			case $kesimpulan[0]:
-			echo "0";
+			echo "1";
+			//echo "Tidak Berisiko";
 			break;
 
 			case $kesimpulan[1]:
-			echo "1";
+			echo "2";
+			//echo "Risiko Rendah";
 			break;
 
 			case $kesimpulan[2]:
-			echo "2";
+			echo "3";
+			//echo "Sangat Rendah";
 			break;
 
 			case $kesimpulan[3]:
-			echo "3";
-			break;
-
-			case $kesimpulan[4]:
 			echo "4";
 			break;
 
-			case $kesimpulan[5]:
+			case $kesimpulan[4]:
 			echo "5";
+			//echo "Risiko Sedang";
+			break;
+
+			case $kesimpulan[5]:
+			echo "6";
+			//echo "Berisiko";
 			break;
 
 			case $kesimpulan[6]:
-			echo "6";
+			echo "7";
+			//echo "Sangat Berisiko";
 			break;
 		}
 	//Akhir Hitung Masing-masing Score per CLass //
-		?>		
-	</div>	
+		?>
+		</p>
+		<br><br><br>
+			<p style="float:left;"><b>Skala : </b>1 - 7</p>		
+	</div>
 	<div class="col-4"></div>	
 </div>
