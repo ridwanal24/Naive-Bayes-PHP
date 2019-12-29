@@ -80,6 +80,7 @@
             <input type="submit" name="submit" class="btn btn-primary float-right">
          </div>
       </form>
+      <a class="btn btn-primary" href="page/akurasi.php">Akurasi</a>
    </div>
    <div class="col-4"></div>
 </div>
