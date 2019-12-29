@@ -26,16 +26,12 @@ $kelas = array();
 $hasil_class_0 = array();
 $hasil_class_1 = array();
 $hasil_class_2 = array();
-$hasil_class_3 = array();
-$hasil_class_4 = array();
-$hasil_class_5 = array();
-$hasil_class_6 = array();
 
 //Proses Ambil Data & Pemisahan
 $open=fopen('../drug_consumption.csv', 'r');
 while (!feof($open)) {
 	$getTextLine=fgets($open);
-	$explodeLine=explode(";", $getTextLine);
+	$explodeLine=explode(",", $getTextLine);
 
 	if ($i<1508) {
 		list($age[$i],$gender[$i],$education[$i],$nicotine[$i],$caffeine[$i],$chocolate[$i],$alchohol[$i],$kelas[$i],$x)=$explodeLine;	
@@ -68,18 +64,6 @@ while($index<$n){
 		case "class_2":
 		$count_class_2++;
 		break;
-		case "class_3":
-		$count_class_3++;
-		break;
-		case "class_4":
-		$count_class_4++;
-		break;
-		case "class_5":
-		$count_class_5++;
-		break;
-		case "class_6":
-		$count_class_6++;
-		break;
 	}
 	$index++;
 }
@@ -87,11 +71,6 @@ while($index<$n){
 $hasil_class_0[0]=$count_class_0/$n;
 $hasil_class_1[0]=$count_class_1/$n;
 $hasil_class_2[0]=$count_class_2/$n;
-$hasil_class_3[0]=$count_class_3/$n;
-$hasil_class_4[0]=$count_class_4/$n;
-$hasil_class_5[0]=$count_class_5/$n;
-$hasil_class_6[0]=$count_class_6/$n;
-
 	//Akhir Menghitung P Class_1//
 
 	//Menghitung P terhadap C (Age) //
@@ -105,24 +84,12 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $age[$index]==$t_age[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $age[$index]==$t_age[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $age[$index]==$t_age[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $age[$index]==$t_age[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $age[$index]==$t_age[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[1]=$count0/$count_class_0;
 $hasil_class_1[1]=$count1/$count_class_1;
 $hasil_class_2[1]=$count2/$count_class_2;
-$hasil_class_3[1]=$count3/$count_class_3;
-$hasil_class_4[1]=$count4/$count_class_4;
-$hasil_class_5[1]=$count5/$count_class_5;
-$hasil_class_6[1]=$count6/$count_class_6;
 
 	//Akhir Menghitung P terhadap C (Age) //
 
@@ -137,24 +104,12 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $gender[$index]==$t_gender[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $gender[$index]==$t_gender[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $gender[$index]==$t_gender[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $gender[$index]==$t_gender[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $gender[$index]==$t_gender[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[2]=$count0/$count_class_0;
 $hasil_class_1[2]=$count1/$count_class_1;
 $hasil_class_2[2]=$count2/$count_class_2;
-$hasil_class_3[2]=$count3/$count_class_3;
-$hasil_class_4[2]=$count4/$count_class_4;
-$hasil_class_5[2]=$count5/$count_class_5;
-$hasil_class_6[2]=$count6/$count_class_6;
 
 	//Akhir Menghitung P terhadap C (Gender) //
 
@@ -169,24 +124,12 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $education[$index]==$t_education[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $education[$index]==$t_education[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $education[$index]==$t_education[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $education[$index]==$t_education[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $education[$index]==$t_education[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[3]=$count0/$count_class_0;
 $hasil_class_1[3]=$count1/$count_class_1;
 $hasil_class_2[3]=$count2/$count_class_2;
-$hasil_class_3[3]=$count3/$count_class_3;
-$hasil_class_4[3]=$count4/$count_class_4;
-$hasil_class_5[3]=$count5/$count_class_5;
-$hasil_class_6[3]=$count6/$count_class_6;
 
 	//Akhir Menghitung P terhadap C (Education) //
 
@@ -201,24 +144,12 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $nicotine[$index]==$t_nicotine[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $nicotine[$index]==$t_nicotine[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $nicotine[$index]==$t_nicotine[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $nicotine[$index]==$t_nicotine[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $nicotine[$index]==$t_nicotine[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[4]=$count0/$count_class_0;
 $hasil_class_1[4]=$count1/$count_class_1;
 $hasil_class_2[4]=$count2/$count_class_2;
-$hasil_class_3[4]=$count3/$count_class_3;
-$hasil_class_4[4]=$count4/$count_class_4;
-$hasil_class_5[4]=$count5/$count_class_5;
-$hasil_class_6[4]=$count6/$count_class_6;
 
 	//Akhir Menghitung P terhadap C (Nikotin) //
 
@@ -233,25 +164,12 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $caffeine[$index]==$t_caffeine[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $caffeine[$index]==$t_caffeine[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $caffeine[$index]==$t_caffeine[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $caffeine[$index]==$t_caffeine[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $caffeine[$index]==$t_caffeine[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[5]=$count0/$count_class_0;
 $hasil_class_1[5]=$count1/$count_class_1;
 $hasil_class_2[5]=$count2/$count_class_2;
-$hasil_class_3[5]=$count3/$count_class_3;
-$hasil_class_4[5]=$count4/$count_class_4;
-$hasil_class_5[5]=$count5/$count_class_5;
-$hasil_class_6[5]=$count6/$count_class_6;
-
 	//Akhir Menghitung P terhadap C (Caffein) //
 
 	//Menghitung P terhadap C (Cokelat) //
@@ -265,24 +183,12 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $chocolate[$index]==$t_chocolate[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $chocolate[$index]==$t_chocolate[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $chocolate[$index]==$t_chocolate[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $chocolate[$index]==$t_chocolate[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $chocolate[$index]==$t_chocolate[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[6]=$count0/$count_class_0;
 $hasil_class_1[6]=$count1/$count_class_1;
 $hasil_class_2[6]=$count2/$count_class_2;
-$hasil_class_3[6]=$count3/$count_class_3;
-$hasil_class_4[6]=$count4/$count_class_4;
-$hasil_class_5[6]=$count5/$count_class_5;
-$hasil_class_6[6]=$count6/$count_class_6;
 
 	//Akhir Menghitung P terhadap C (Cokelat) //
 
@@ -297,49 +203,29 @@ while($index<$n){
 		$count1++;
 	}else if ($kelas[$index]=="class_2" AND $alchohol[$index]==$t_alchohol[$i]) {
 		$count2++;
-	}else if ($kelas[$index]=="class_3" AND $alchohol[$index]==$t_alchohol[$i]) {
-		$count3++;
-	}else if ($kelas[$index]=="class_4" AND $alchohol[$index]==$t_alchohol[$i]) {
-		$count4++;
-	}else if ($kelas[$index]=="class_5" AND $alchohol[$index]==$t_alchohol[$i]) {
-		$count5++;
-	}else if ($kelas[$index]=="class_6" AND $alchohol[$index]==$t_alchohol[$i]) {
-		$count6++;
 	}
 	$index++;
 }
 $hasil_class_0[7]=$count0/$count_class_0;
 $hasil_class_1[7]=$count1/$count_class_1;
 $hasil_class_2[7]=$count2/$count_class_2;
-$hasil_class_3[7]=$count3/$count_class_3;
-$hasil_class_4[7]=$count4/$count_class_4;
-$hasil_class_5[7]=$count5/$count_class_5;
-$hasil_class_6[7]=$count6/$count_class_6;
 
 	//Akhir Menghitung P terhadap C (Alkohol) //
 
 	//Hitung Masing-masing Score per CLass //
 $a=0;
 
-$class=array(1,1,1,1,1,1,1);
-while ($a<7) {
+$class=array(1,1,1);
+while ($a<3) {
 	$class[0]*=$hasil_class_0[$a];
 	$class[1]*=$hasil_class_1[$a];
 	$class[2]*=$hasil_class_2[$a];
-	$class[3]*=$hasil_class_3[$a];
-	$class[4]*=$hasil_class_4[$a];
-	$class[5]*=$hasil_class_5[$a];
-	$class[6]*=$hasil_class_6[$a];
 
 	$a++;
 }
 $kesimpulan[0]=$class[0];
 $kesimpulan[1]=$class[1];
 $kesimpulan[2]=$class[2];
-$kesimpulan[3]=$class[3];
-$kesimpulan[4]=$class[4];
-$kesimpulan[5]=$class[5];
-$kesimpulan[6]=$class[6];
 
 /*print_r($kesimpulan);
 */
@@ -359,25 +245,6 @@ switch ($class[0]) {
 			case $kesimpulan[2]:
 			$hasil = "class_2";
 			//echo "Sangat Rendah";
-			break;
-
-			case $kesimpulan[3]:
-			$hasil = "class_3";
-			break;
-
-			case $kesimpulan[4]:
-			$hasil = "class_4";
-			//echo "Risiko Sedang";
-			break;
-
-			case $kesimpulan[5]:
-			$hasil = "class_5";
-			//echo "Berisiko";
-			break;
-
-			case $kesimpulan[6]:
-			$hasil = "class_6";
-			//echo "Sangat Berisiko";
 			break;
 		}
 
