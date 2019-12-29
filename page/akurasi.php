@@ -216,7 +216,7 @@ $hasil_class_2[7]=$count2/$count_class_2;
 $a=0;
 
 $class=array(1,1,1);
-while ($a<3) {
+while ($a<1) {
 	$class[0]*=$hasil_class_0[$a];
 	$class[1]*=$hasil_class_1[$a];
 	$class[2]*=$hasil_class_2[$a];
