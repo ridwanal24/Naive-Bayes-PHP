@@ -276,67 +276,76 @@ rsort($class);
 				<div class="row">
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(class = "class_0") = <?php echo $hasil_class_0[0];?></p>
-						<p>P(class = "class_1") = <?php echo $hasil_class_1[0];?></p>
-						<p>P(class = "class_2") = <?php echo $hasil_class_2[0];?></p>
+						<p>P( class = "class_0" ) = <?php echo $hasil_class_0[0];?></p>
+						<p>P( class = "class_1" ) = <?php echo $hasil_class_1[0];?></p>
+						<p>P( class = "class_2" ) = <?php echo $hasil_class_2[0];?></p>
 					</div>
 					<!-- End -->
 
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(age = "<?php echo $_GET['age']; ?>" | class = "class_0") = <?php echo $hasil_class_0[1];?></p>
-						<p>P(age = "<?php echo $_GET['age']; ?>" | class = "class_1") = <?php echo $hasil_class_1[1];?></p>
-						<p>P(age = "<?php echo $_GET['age']; ?>" | class = "class_2") = <?php echo $hasil_class_2[1];?></p>
+						<p>P( age = "<?php echo $_GET['age']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[1];?></p>
+						<p>P( age = "<?php echo $_GET['age']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[1];?></p>
+						<p>P( age = "<?php echo $_GET['age']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[1];?></p>
 					</div>
 					<!-- End -->
 
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(gender = "<?php echo $_GET['gender']; ?>" | class = "class_0") = <?php echo $hasil_class_0[2];?></p>
-						<p>P(gender = "<?php echo $_GET['gender']; ?>" | class = "class_1") = <?php echo $hasil_class_1[2];?></p>
-						<p>P(gender = "<?php echo $_GET['gender']; ?>" | class = "class_2") = <?php echo $hasil_class_2[2];?></p>
+						<p>P( gender = "<?php echo $_GET['gender']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[2];?></p>
+						<p>P( gender = "<?php echo $_GET['gender']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[2];?></p>
+						<p>P( gender = "<?php echo $_GET['gender']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[2];?></p>
 					</div>
 					<!-- End -->
 
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(education = "<?php echo $_GET['education']; ?>" | class = "class_0") = <?php echo $hasil_class_0[3];?></p>
-						<p>P(education = "<?php echo $_GET['education']; ?>" | class = "class_1") = <?php echo $hasil_class_1[3];?></p>
-						<p>P(education = "<?php echo $_GET['education']; ?>" | class = "class_2") = <?php echo $hasil_class_2[3];?></p>
+						<p>P( education = "<?php echo $_GET['education']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[3];?></p>
+						<p>P( education = "<?php echo $_GET['education']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[3];?></p>
+						<p>P( education = "<?php echo $_GET['education']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[3];?></p>
 					</div>
 					<!-- End -->
 
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_0") = <?php echo $hasil_class_0[4];?></p>
-						<p>P(nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_1") = <?php echo $hasil_class_1[4];?></p>
-						<p>P(nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_2") = <?php echo $hasil_class_2[4];?></p>
+						<p>P( nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[4];?></p>
+						<p>P( nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[4];?></p>
+						<p>P( nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[4];?></p>
 					</div>
 					<!-- End -->
 
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_0") = <?php echo $hasil_class_0[5];?></p>
-						<p>P(caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_1") = <?php echo $hasil_class_1[5];?></p>
-						<p>P(caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_2") = <?php echo $hasil_class_2[5];?></p>
+						<p>P( caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[5];?></p>
+						<p>P( caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[5];?></p>
+						<p>P( caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[5];?></p>
 					</div>
 					<!-- End -->
 
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_0") = <?php echo $hasil_class_0[6];?></p>
-						<p>P(chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_1") = <?php echo $hasil_class_1[6];?></p>
-						<p>P(chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_2") = <?php echo $hasil_class_2[6];?></p>
+						<p>P( chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[6];?></p>
+						<p>P( chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[6];?></p>
+						<p>P( chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[6];?></p>
 					</div>
 					<!-- End -->					
-				
+
 					<!-- Start -->
 					<div class="col-12 m-2">
-						<p>P(alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_0") = <?php echo $hasil_class_0[7];?></p>
-						<p>P(alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_1") = <?php echo $hasil_class_1[7];?></p>
-						<p>P(alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_2") = <?php echo $hasil_class_2[7];?></p>
+						<p>P( alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_0" ) = <?php echo $hasil_class_0[7];?></p>
+						<p>P( alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_1" ) = <?php echo $hasil_class_1[7];?></p>
+						<p>P( alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_2" ) = <?php echo $hasil_class_2[7];?></p>
 					</div>
 					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P( X | class = "class_0" ) = <?php echo $hasil_class_0[0]." x ".$hasil_class_0[1]." x ".$hasil_class_0[2]." x ".$hasil_class_0[3]." x ".$hasil_class_0[4]." x ".$hasil_class_0[5]." x ".$hasil_class_0[6]." x ".$hasil_class_0[7]." = ".$kesimpulan[0];?></p>
+						<p>P( X | class = "class_1" ) = <?php echo $hasil_class_1[0]." x ".$hasil_class_1[1]." x ".$hasil_class_1[2]." x ".$hasil_class_1[3]." x ".$hasil_class_1[4]." x ".$hasil_class_1[5]." x ".$hasil_class_1[6]." x ".$hasil_class_1[7]." = ".$kesimpulan[1];?></p>
+						<p>P( X | class = "class_2" ) = <?php echo $hasil_class_2[0]." x ".$hasil_class_2[1]." x ".$hasil_class_2[2]." x ".$hasil_class_2[3]." x ".$hasil_class_2[4]." x ".$hasil_class_2[5]." x ".$hasil_class_2[6]." x ".$hasil_class_2[7]." = ".$kesimpulan[2];?></p>
+					</div>
+					<!-- End -->
+
 				</div>
 			</div>
 		</div>
