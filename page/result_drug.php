@@ -43,7 +43,7 @@ $hasil_class_5 = array();
 $hasil_class_6 = array();
 
 	//proses ambil data
-$open=fopen('drug_consumption.csv', 'r');
+$open=fopen('drug_consumption_(backup).csv', 'r');
 while (!feof($open)) {
 	$getTextLine=fgets($open);
 	$explodeLine=explode(";", $getTextLine);
