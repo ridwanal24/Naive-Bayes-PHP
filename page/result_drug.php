@@ -241,31 +241,105 @@ $kesimpulan[2]=$class[2];
 rsort($class);
 ?>
 <div class="row">
-	<div class="col-4"></div>	
-	<div class="col-4 rounded p-md-4 text-center bg-light">
-		<p class="h1 text-center">Tingkat Kerawanan</p>
-		<br>
-		<p class="h1">
-		<?php
-		switch ($class[0]) {
-			case $kesimpulan[0]:
-			echo "Risiko Rendah";
-			break;
+	<div class="col-2"></div>	
+	<div class="col-8 rounded p-md-4 text-center bg-white shadow">
+		<div class="m-5">
+			<p><small>Risiko</small></p>	
+			<p class="text-center">
+				<?php
+				switch ($class[0]) {
+					case $kesimpulan[0]:
+					echo "<center><div class='bg-success p-2 text-white h1 col-md-4 rounded shadow'>RENDAH</div></center>";
+					break;
 
-			case $kesimpulan[1]:
-			echo "Risiko Sedang";
-			break;
+					case $kesimpulan[1]:
+					echo "<center><div class='bg-warning p-2 text-white h1 col-md-4 rounded shadow'>SEDANG</div></center>";
+					break;
 
-			case $kesimpulan[2]:
-			echo "Risiko Tinggi";
-			break;
+					case $kesimpulan[2]:
+					echo "<center><div class='bg-danger p-2 text-white h1 col-md-4 rounded shadow'>TINGGI</div></center>";
+					break;
 
-		}
+				}
 	//Akhir Hitung Masing-masing Score per CLass //
-		?>
+				?>
+			</p>
+		</div>
+		
+		<p>
+			<a class="btn btn-primary" data-toggle="collapse" href="#detail" role="button" aria-expanded="false" aria-controls="collapseExample">
+				Detail Score
+			</a>
 		</p>
-		<br><br><br>
-			<p style="float:left;"><b>Skala : </b>1 - 7</p>		
+		<div class="collapse" id="detail">
+			<div class="card text-left card-body">
+				<div class="row">
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(class = "class_0") = <?php echo $hasil_class_0[0];?></p>
+						<p>P(class = "class_1") = <?php echo $hasil_class_1[0];?></p>
+						<p>P(class = "class_2") = <?php echo $hasil_class_2[0];?></p>
+					</div>
+					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(age = "<?php echo $_GET['age']; ?>" | class = "class_0") = <?php echo $hasil_class_0[1];?></p>
+						<p>P(age = "<?php echo $_GET['age']; ?>" | class = "class_1") = <?php echo $hasil_class_1[1];?></p>
+						<p>P(age = "<?php echo $_GET['age']; ?>" | class = "class_2") = <?php echo $hasil_class_2[1];?></p>
+					</div>
+					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(gender = "<?php echo $_GET['gender']; ?>" | class = "class_0") = <?php echo $hasil_class_0[2];?></p>
+						<p>P(gender = "<?php echo $_GET['gender']; ?>" | class = "class_1") = <?php echo $hasil_class_1[2];?></p>
+						<p>P(gender = "<?php echo $_GET['gender']; ?>" | class = "class_2") = <?php echo $hasil_class_2[2];?></p>
+					</div>
+					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(education = "<?php echo $_GET['education']; ?>" | class = "class_0") = <?php echo $hasil_class_0[3];?></p>
+						<p>P(education = "<?php echo $_GET['education']; ?>" | class = "class_1") = <?php echo $hasil_class_1[3];?></p>
+						<p>P(education = "<?php echo $_GET['education']; ?>" | class = "class_2") = <?php echo $hasil_class_2[3];?></p>
+					</div>
+					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_0") = <?php echo $hasil_class_0[4];?></p>
+						<p>P(nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_1") = <?php echo $hasil_class_1[4];?></p>
+						<p>P(nicotine = "<?php echo $_GET['nicotine']; ?>" | class = "class_2") = <?php echo $hasil_class_2[4];?></p>
+					</div>
+					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_0") = <?php echo $hasil_class_0[5];?></p>
+						<p>P(caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_1") = <?php echo $hasil_class_1[5];?></p>
+						<p>P(caffeine = "<?php echo $_GET['caffeine']; ?>" | class = "class_2") = <?php echo $hasil_class_2[5];?></p>
+					</div>
+					<!-- End -->
+
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_0") = <?php echo $hasil_class_0[6];?></p>
+						<p>P(chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_1") = <?php echo $hasil_class_1[6];?></p>
+						<p>P(chocolate = "<?php echo $_GET['chocolate']; ?>" | class = "class_2") = <?php echo $hasil_class_2[6];?></p>
+					</div>
+					<!-- End -->					
+				
+					<!-- Start -->
+					<div class="col-12 m-2">
+						<p>P(alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_0") = <?php echo $hasil_class_0[7];?></p>
+						<p>P(alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_1") = <?php echo $hasil_class_1[7];?></p>
+						<p>P(alcohol = "<?php echo $_GET['alchohol']; ?>" | class = "class_2") = <?php echo $hasil_class_2[7];?></p>
+					</div>
+					<!-- End -->
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="col-4"></div>	
+	<div class="col-2"></div>	
 </div>
