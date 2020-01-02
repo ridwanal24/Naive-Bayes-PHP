@@ -4,7 +4,7 @@
  <title>NBC</title>
  <link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
 </head>
-<body class="bg-info">
+<body class="bg-light">
  <div class="container-fluid">
   <p class="h1 text-center text-light">NAIVE BAYES CLASSIFICATION</p>
   <?php

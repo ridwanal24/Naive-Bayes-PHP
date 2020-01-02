@@ -1,20 +1,20 @@
 <div class="row">
    <div class="col-4"></div>
-   <div class="col-4 rounded bg-light p-4">
+   <div class="col-4 rounded bg-white shadow p-4">
       <form action="" method="get">
          <div class="form-group">
-            <label for="inputAge" required>Age</label>
-            <input type="number" class="form-control" id="inputAge" name="age" placeholder="Your Age">
+            <label for="inputAge" required><small>Age</small></label>
+            <input type="number" class="form-control" id="inputAge" name="age" placeholder="Your Age" required>
          </div>
          <div class="form-group">
-            <label for="inputGender">Gender</label>
+            <label for="inputGender"><small>Gender</small></label>
             <select name="gender" id="inputGender" class="form-control">
                <option value="gender_male" selected>Male</option>
                <option value="gender_female">Female</option>
             </select>
          </div>
          <div class="form-group">
-            <label for="inputEducation">Education</label>
+            <label for="inputEducation"><small>Education</small></label>
             <select name="education" id="inputEducation" class="form-control">
                <option value="edu_1" selected>Left school before 16 years old</option>
                <option value="edu_2" >Left school at 16 years old</option>
@@ -28,7 +28,7 @@
             </select>
          </div>
          <div class="form-group">
-            <label for="inputNicotine">Nicotine (Smooking)</label>
+            <label for="inputNicotine"><small>Nicotine (Smooking)</small></label>
             <select name="nicotine" id="inputNicotine" class="form-control">
                <option value="nikotin_0" selected>Never Used</option>
                <option value="nikotin_1" >Used over a Decade Ago</option>
@@ -40,7 +40,7 @@
             </select>
          </div>
          <div class="form-group">
-            <label for="inputCaffein">Caffeine (Coffee)</label>
+            <label for="inputCaffein"><small>Caffeine (Coffee)</small></label>
             <select name="caffeine" id="inputCaffein" class="form-control">
                <option value="caffeine_0" selected>Never Used</option>
                <option value="caffeine_1" >Used over a Decade Ago</option>
@@ -52,7 +52,7 @@
             </select>
          </div>
          <div class="form-group">
-            <label for="inputChocolate">Chocolate</label>
+            <label for="inputChocolate"><small>Chocolate</small></label>
             <select name="chocolate" id="inputChocolate" class="form-control">
                <option value="choco_0" selected>Never Used</option>
                <option value="choco_1" >Used over a Decade Ago</option>
@@ -64,7 +64,7 @@
             </select>
          </div>
          <div class="form-group">
-            <label for="inputAlcohol">Alcohol</label>
+            <label for="inputAlcohol"><small>Alcohol</small></label>
             <select name="alchohol" id="inputChocolate" class="form-control">
                <option value="alchohol_0" selected>Never Used</option>
                <option value="alchohol_1" >Used over a Decade Ago</option>
