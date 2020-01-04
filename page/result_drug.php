@@ -1,4 +1,5 @@
 <?php
+	
 	//deklarasi variabel data 
 $i=0;
 $koma=20;
@@ -26,13 +27,7 @@ if ($_GET['age']<24) {
 }else{
 	$umur="age_6";
 } 
-
-/*-0.95197	<24	  tahun
--0.07854	25-34 tahun
-0.49788		35-44 tahun
-1.09449 	45-54 tahun
-1.82213 	55-64 tahun
-2.59171 	65+   tahun*/
+	
 	//deklarasi variabel hasil
 $hasil_class_0 = array();
 $hasil_class_1 = array();
@@ -49,7 +44,6 @@ while (!feof($open)) {
 	$explodeLine=explode(",", $getTextLine);
 
 	list($age[$i],$gender[$i],$education[$i],$nicotine[$i],$caffeine[$i],$chocolate[$i],$alchohol[$i],$kelas[$i],$x)=$explodeLine;
-		//echo $i." ".$age[$i].$gender[$i].$education[$i].$nicotine[$i].$caffeine[$i].$chocolate[$i].$alchohol[$i].$kelas[$i]."<br>";
 	$i++;
 }
 
@@ -78,7 +72,6 @@ while($index<$n){
 $hasil_class_0[0]=$count_class_0/$n;
 $hasil_class_1[0]=$count_class_1/$n;
 $hasil_class_2[0]=$count_class_2/$n;
-
 	//Akhir Menghitung P Class_1//
 
 	//Menghitung P terhadap C (Age) //
@@ -98,7 +91,6 @@ while($index<$n){
 $hasil_class_0[1]=$count0/$count_class_0;
 $hasil_class_1[1]=$count1/$count_class_1;
 $hasil_class_2[1]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Age) //
 
 	//Menghitung P terhadap C (Gender) //
@@ -118,7 +110,6 @@ while($index<$n){
 $hasil_class_0[2]=$count0/$count_class_0;
 $hasil_class_1[2]=$count1/$count_class_1;
 $hasil_class_2[2]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Gender) //
 
 	//Menghitung P terhadap C (Education) //
@@ -138,7 +129,6 @@ while($index<$n){
 $hasil_class_0[3]=$count0/$count_class_0;
 $hasil_class_1[3]=$count1/$count_class_1;
 $hasil_class_2[3]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Education) //
 
 	//Menghitung P terhadap C (Nikotin) //
@@ -158,7 +148,6 @@ while($index<$n){
 $hasil_class_0[4]=$count0/$count_class_0;
 $hasil_class_1[4]=$count1/$count_class_1;
 $hasil_class_2[4]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Nikotin) //
 
 	//Menghitung P terhadap C (Caffein) //
@@ -178,7 +167,6 @@ while($index<$n){
 $hasil_class_0[5]=$count0/$count_class_0;
 $hasil_class_1[5]=$count1/$count_class_1;
 $hasil_class_2[5]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Caffein) //
 
 	//Menghitung P terhadap C (Cokelat) //
@@ -198,7 +186,6 @@ while($index<$n){
 $hasil_class_0[6]=$count0/$count_class_0;
 $hasil_class_1[6]=$count1/$count_class_1;
 $hasil_class_2[6]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Cokelat) //
 
 	//Menghitung P terhadap C (Alkohol) //
@@ -218,7 +205,6 @@ while($index<$n){
 $hasil_class_0[7]=$count0/$count_class_0;
 $hasil_class_1[7]=$count1/$count_class_1;
 $hasil_class_2[7]=$count2/$count_class_2;
-
 	//Akhir Menghitung P terhadap C (Alkohol) //
 
 	//Hitung Masing-masing Score per CLass //
@@ -236,8 +222,6 @@ $kesimpulan[0]=$class[0];
 $kesimpulan[1]=$class[1];
 $kesimpulan[2]=$class[2];
 
-/*print_r($kesimpulan);
-*/
 rsort($class);
 ?>
 <div class="row">
@@ -259,7 +243,6 @@ rsort($class);
 					case $kesimpulan[2]:
 					echo "<center><div class='bg-danger p-2 text-white h1 col-md-4 rounded shadow'>TINGGI</div></center>";
 					break;
-
 				}
 	//Akhir Hitung Masing-masing Score per CLass //
 				?>
@@ -345,7 +328,6 @@ rsort($class);
 						<p>P( X | class = "class_2" ) = <?php echo $hasil_class_2[0]." x ".$hasil_class_2[1]." x ".$hasil_class_2[2]." x ".$hasil_class_2[3]." x ".$hasil_class_2[4]." x ".$hasil_class_2[5]." x ".$hasil_class_2[6]." x ".$hasil_class_2[7]." = ".$kesimpulan[2];?></p>
 					</div>
 					<!-- End -->
-
 				</div>
 			</div>
 		</div>
